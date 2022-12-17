@@ -65,7 +65,7 @@ aside {
   border-bottom: 5px solid #1098ad;
 }
 /* body {
-   background-color: orchid; 
+  background-color: orchid;
 } */
 /* .first-li {
   font-weight: bold;
@@ -102,3 +102,17 @@ a:active {
 }
 
 /* LVHA */
+
+/* Resolving conflicts */
+#copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: lime;
+}
+footer p {
+  color: orange;
+}
