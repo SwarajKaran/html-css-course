@@ -189,3 +189,42 @@ button {
   bottom: 50px;
   right: 50px;
 }
+/* :: -> pseudo element
+: -> pseudo class 
++ -> adjacent element
+ */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+/* h2::first-letter {
+  font-size: 50px;
+} */
+
+/* adjacent element can be selected using plus 
+eg. select p which comes after h3 */
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* before  and after pseudo elements */
+/* psedo elements are by default inline */
+h2 {
+  /* background-color: orange; */
+  position: relative;
+  /* as we have set relative here, as per this parent only h2::after will be absolute */
+}
+h2::after {
+  /* content is mandatory */
+  content: "TOP";
+  background-color: #ffe70c;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
